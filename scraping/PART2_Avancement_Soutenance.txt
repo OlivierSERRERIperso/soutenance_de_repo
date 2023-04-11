@@ -1,0 +1,9 @@
+PARTIE 2
+
+Code : "PART2_scraping_trustpilot_compagny_soutenance"
+
+Le code permet d'obtenir 25 pages (500 commentaires) en 4 minute eet 30 secondes
+
+Création de 2 fichiers ".csv" :
+- fichier contenant les informations générales sur l'entreprise : "PART2_Infos_Showroomprivee_Soutenance.csv"
+- fichier contenant les commentaires et leurs informations : "PART2_Infos_Soutenance.csv"

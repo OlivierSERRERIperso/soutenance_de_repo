@@ -1,0 +1,8 @@
+PARTIE 1
+
+Code : "PART1_scraping_trustpilot_compagny_soutenance".
+
+Le code permet d'obtenir 2 entreprise par page / pendant 3 pages / pour 2 catégorie (soit 12 lignes) en 4 minute et 50 secondes
+
+Création d'un fichiers ".csv" :
+- fichier contenant les informations générales sur les entreprise : "PART1_Infos_Soutenance.csv"

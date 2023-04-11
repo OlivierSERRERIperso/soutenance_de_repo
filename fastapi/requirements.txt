@@ -1,0 +1,3 @@
+fastapi 
+uvicorn == 0.21.0
+CPython == 0.0.6
