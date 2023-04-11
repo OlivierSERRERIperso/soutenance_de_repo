@@ -37,7 +37,7 @@ agent any
 
         }
 
-    stage("Analyse de sentiment "){
+    stage("Analyse de  "){
 
    steps {
                 script {
