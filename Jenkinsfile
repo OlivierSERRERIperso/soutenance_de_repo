@@ -7,7 +7,7 @@ agent any
                 script {
                     sh'''
                     python3 scraping/PART2_scraping_trustpilot_company_soutenance.py
-                    sleep 10
+                    sleep 3
                     '''
                 }
             }
