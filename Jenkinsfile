@@ -31,7 +31,7 @@ agent any
                     sh'''
                    
                      sudo chmod +x SQL/install.sh
-                     sudo sh 'cd SQL/'
+                     sudo sh -c 'cd SQL/'
                      sudo mv info_company.csv ../../../../mysql
                      
                      sudo mysql -u root "
