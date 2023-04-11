@@ -69,7 +69,8 @@ agent any
    steps {
                 script {
                     sh'''
-                       uvicorn fastapi/app/main:api --host 0.0.0.0 --port 80
+                       cd fastapi/app/
+                       uvicorn main:api --host 0.0.0.0 --port 80
                        
                     '''
                 }
