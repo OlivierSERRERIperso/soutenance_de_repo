@@ -37,7 +37,7 @@ agent any
 
         }
 
-    stage("Analyse de  "){
+    stage("Analyse de Sentiments  "){
 
    steps {
                 script {
@@ -57,6 +57,7 @@ agent any
    steps {
                 script {
                     sh'''
+                       cd elasticsearch
                        docker-compose up -d
                        
                     '''
