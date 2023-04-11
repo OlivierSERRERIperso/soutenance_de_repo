@@ -57,8 +57,7 @@ agent any
    steps {
                 script {
                     sh'''
-                       cd elasticsearch
-                       docker-compose up -d
+                    echo "bonjour"
                        
                     '''
                 }
