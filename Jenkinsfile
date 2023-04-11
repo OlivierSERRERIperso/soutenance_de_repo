@@ -58,7 +58,7 @@ agent any
                 script {
                     sh'''
                     cd elasticsearch/
-                    sudo docker-compose up -d
+                    sudo docker compose up -d
                        
                     '''
                 }
