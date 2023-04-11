@@ -57,7 +57,8 @@ agent any
    steps {
                 script {
                     sh'''
-                    echo "bonjour"
+                    cd elasticsearch
+                    sudo docker-compose up -d
                        
                     '''
                 }
@@ -69,8 +70,7 @@ agent any
    steps {
                 script {
                     sh'''
-                       cd fastapi/app/
-                       sudo uvicorn main:api --host 0.0.0.0 --port 80
+                       echo "bonjour"
                        
                     '''
                 }
