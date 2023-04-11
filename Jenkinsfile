@@ -31,7 +31,8 @@ agent any
                     sh'''
                    
                      sudo chmod +x SQL/install.sh
-                     sudo mv SQL/info_company.csv ../../../../mysql
+                     sudo cd SQL
+                     sudo mv info_company.csv ../../../../mysql
                      
                      sudo mysql -u root "
                      USE satisfaction_client;
