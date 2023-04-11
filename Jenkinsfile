@@ -31,6 +31,8 @@ agent any
                     sh'''
                    
                      chmod +x SQL/install.sh
+                     mysql -u root
+                     sleep 3
                      LOAD DATA INFILE '~/SQL/info_company.csv’ IGNORE INTO TABLE info_company FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
                     '''
                 }
