@@ -25,7 +25,7 @@ print("//////////DEBUT/////////////////////////")
 
 # df = pd.read_csv('../scraping/PART2_Infos_Soutenance_Full.csv', sep = ',')
 
-df = pd.read_csv('/home/ubuntu/scraping/PART2_Infos_Soutenance_Full.csv', sep = ',')
+df = pd.read_csv('/var/lib/jenkins/workspace/soutenance/scraping/PART2_Infos_Soutenance_Full.csv', sep = ',')
 
 print(len(df))
 
