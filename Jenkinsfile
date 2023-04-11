@@ -29,9 +29,8 @@ agent any
    steps {
                 script {
                     sh'''
-                     #  chmod +x SQL/install.sh
-                     #  LOAD DATA INFILE '~/SQL/info_company.csv’ IGNORE INTO TABLE info_company FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
-
+                   
+                     echo "hello"
                     '''
                 }
             }
@@ -43,6 +42,7 @@ agent any
    steps {
                 script {
                     sh'''
+                       
                        python3 machine_learning/ml.py
 
                     '''
