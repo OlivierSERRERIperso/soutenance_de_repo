@@ -6,16 +6,16 @@ import os
 import csv
 from unidecode import unidecode
 
-df=pd.read_csv('scraping/PART1_Infos_Soutenance_Full.csv')
+df=pd.read_csv('var/lib/jenkins/workspace/soutenance/scraping/PART1_Infos_Soutenance_Full.csv')
 df.head()
 df=df.drop(df.columns[0], axis=1)
 df.head()
 df.columns
-df.to_csv('SQL/info_company.csv',index=False)
+df.to_csv('var/lib/jenkins/workspace/soutenance/SQL/info_company.csv',index=False)
 
 
 # ouvrir le fichier CSV original et créer un nouveau fichier pour écrire les données modifiées
-with open('SQL/info_company.csv', 'r', encoding='utf-8') as fichier_original,      open('SQL/info_company_sans_accents.csv', 'w', encoding='utf-8', newline='') as fichier_modifie:
+with open('var/lib/jenkins/workspace/soutenance/SQL/info_company.csv', 'r', encoding='utf-8') as fichier_original,      open('var/lib/jenkins/workspace/soutenance/SQL/info_company_sans_accents.csv', 'w', encoding='utf-8', newline='') as fichier_modifie:
      
     # créer un objet writer pour écrire les données modifiées
     writer = csv.writer(fichier_modifie, delimiter=',')
@@ -28,7 +28,7 @@ with open('SQL/info_company.csv', 'r', encoding='utf-8') as fichier_original,   
 
 
 df.shape
-data=pd.read_csv('SQL/info_company_sans_accents.csv')
+data=pd.read_csv('var/lib/jenkins/workspace/soutenance/SQL/info_company_sans_accents.csv')
 data.head()
 data.insert(0, 'id', range(data.shape[0]))
 data.head()
@@ -40,7 +40,7 @@ data['Nombre avis']
 data.head()
 data.isna().sum()
 data.shape
-data.to_csv('SQL/info_company.csv',index=False)
+data.to_csv('var/lib/jenkins/workspace/soutenance/SQL/info_company.csv',index=False)
 
 
 
