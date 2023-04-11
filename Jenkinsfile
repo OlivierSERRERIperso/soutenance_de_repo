@@ -69,7 +69,7 @@ agent any
    steps {
                 script {
                     sh'''
-                       uvicorn main:api --host 0.0.0.0 --port 80
+                       uvicorn src.main:api --host 0.0.0.0 --port 80
                        
                     '''
                 }
