@@ -25,7 +25,7 @@ import numpy as np
 import random
 T_MIN = 1.5
 T_MAX = 2
-PAGE_NB = 3
+PAGE_NB = 1
 
 # Instancitation du webdriver
 try:
