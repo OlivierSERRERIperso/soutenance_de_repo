@@ -31,7 +31,7 @@ agent any
                     sh'''
                    
                      sudo chmod +x SQL/install.sh
-                     mysql -u root -e "LOAD DATA INFILE '/var/lib/mysql/info_company.csv' IGNORE INTO TABLE info_company FIELDS TERMINATED BY ',' ENCLOSED BY '\"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;"
+                     mysql -u root "LOAD DATA INFILE '/var/lib/mysql/info_company.csv' IGNORE INTO TABLE info_company FIELDS TERMINATED BY ',' ENCLOSED BY '\"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;"
                     '''
                 }
             }
