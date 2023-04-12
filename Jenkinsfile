@@ -31,12 +31,7 @@ agent any
                     sh'''
                    
                      sudo chmod +x SQL/install.sh
-                     cd SQL/
-                     sudo mv info_company.csv ../../../../mysql
-                     
-                     sudo mysql -u root "
-                     USE satisfaction_client;
-                     LOAD DATA INFILE '/var/lib/mysql/info_company.csv' IGNORE INTO TABLE info_company FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;"
+                     LOAD DATA INFILE '/var/lib/mysql/info_company.csv' IGNORE INTO TABLE info_company FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
                     '''
                 }
             }
