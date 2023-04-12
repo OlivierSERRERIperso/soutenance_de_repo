@@ -35,9 +35,9 @@ agent any
                      USE satisfaction_client; 
                      LOAD DATA INFILE '/var/lib/mysql/info_company.csv' 
                      IGNORE INTO TABLE info_company 
-                     FIELDS TERMINATED BY "," 
-                     OPTIONALLY ENCLOSED BY "\'" 
-                     LINES TERMINATED BY "\n"
+                     FIELDS TERMINATED BY ',"'
+                     OPTIONALLY ENCLOSED BY '\"' 
+                     LINES TERMINATED BY '\n'
                      IGNORE 1 ROWS;
                      "
                     '''
