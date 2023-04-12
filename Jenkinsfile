@@ -51,7 +51,7 @@ agent any
                 script {
                     sh'''
                        
-                       echo "bonjour"
+                       python3 machine_learning/ml.py
 
                     '''
                 }
