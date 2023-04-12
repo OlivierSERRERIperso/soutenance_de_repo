@@ -65,7 +65,8 @@ agent any
    steps {
                 script {
                     sh'''
-                    echo "bonjour"
+                    cd elasticsearch/
+                    sudo docker compose up -d
                        
                     '''
                 }
